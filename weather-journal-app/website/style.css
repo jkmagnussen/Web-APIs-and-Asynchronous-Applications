@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(54, 82, 134);
+  background-image: url('resources/sky.jpg');
+  background-size: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 140px 1fr 70px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-entry {
+  text-align: center;
+  color: rgb(53, 54, 54);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+#current-day {
+  padding: 10px;
+  text-align: center;
+  color: rgb(36, 128, 128);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  border-radius: 12px;
+}
+
+#zip {
+  padding: 10px;
+  text-align: center;
+  color: rgb(36, 128, 128);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  border-radius: 12px;
+}
+
+#key {
+  padding: 10px;
+  text-align: center;
+  color: rgb(36, 128, 128);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  border-radius: 12px;
+}
+
+#feelz {
+  padding: 10px;
+  text-align: center;
+  color: rgb(36, 128, 128);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  border-radius: 12px;
+}
+
+#generate {
+  background-color: rgba(92, 36, 36, 0.5);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(36, 185, 185);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+.section-journal {
+  background-color: rgba(73, 72, 72, 0.5);
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(252, 252, 252);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+/*
+* Reset style for HTML element on active to have no border
+*/
+

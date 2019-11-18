@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Journal</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <a class="wj-header-title" href="/" title="Weather Journal">
+          <h1>Weather Journal</h1>
+        </a>
+      </nav>
+    </header>
+    <main role="main">
+      <section class="section-entry">
+        <div class="section-entry-date">
+          <label for="today" style = 'color: white;' >
+            The Current Date:
+          </label>
+          <br>
+          <input id="current-day" placeholder="current-day" readonly type="text">
+        </div>
+        <div class="section-entry-zip">
+          <br>
+          <label for="zip" style = 'color: white;'>
+            What's Your ZIP Code?:
+          </label>
+          <br>
+          <input id="zip" placeholder="Input your zip-code" type="text">
+        </div>
+        <div class="section-entry-key">
+          <br>
+          <label for="key" style = 'color: white;'>
+            
+            <a href='https://openweathermap.org' title ='link' target="_blank" style = 'color: white;'>
+              OpenWeather
+            </a>
+            &nbsp;API Key:
+          </label>
+          <br>
+          <input id="key" placeholder="ce1851b2e2f6e29c6d67b23da3cbf352
+          " type="text">
+        </div>
+        <br>
+        <div class="section-entry-feelings">
+          <label for="feelings" style ='color: white;'>
+            Journal:
+          </label>
+          <br>
+          <textarea id="feelz" placeholder="How do you feel?" rows="7"></textarea>
+        </div>
+        <br>
+        <button id="generate" type="submit">Save</button>
+      </section>
+      <br>
+      <section class="section-journal">
+        <h2>Most Recent Entry</h2>
+        <div id="entryHolder" class="section-journal-recent">
+          <div id="date"></div>
+          <div id="temp"></div>
+          <div id="content">Currently there are no entries...</div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+        Copyright © 2019, JKMagnussen. All Rights Reserved | 
+    <a href='http://www.linkedin.com/in/joseph-magnussen-478827189'><span style='color: rgb(255, 253, 253);'>LinkedIn</span></a> 
+    | <a href='https://github.com/jkmagnussen'><span style='color: rgb(255, 253, 253);'>Github </span></a>
+    | <a href='https://jkmagnussen.com'><span style='color: rgb(255, 255, 255);'>Homepage </span></a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
